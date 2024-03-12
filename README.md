@@ -4,7 +4,7 @@
 
 ## Requirements
 
-- Download the pretrained models from [here](https://www.dropbox.com/home/weights/android)).
+- Download the pretrained models from [here](https://www.dropbox.com/home/weights/android).
 
 ## Testing
 
