@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:background="@android:color/black">
+
+    <TextView
+        android:id="@+id/textViewOpenCV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="OpenCV DNN on CPU"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/infoOpenCV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewOpenCV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Average inference speed: / ms"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <net.vrgsoft.arcprogress.ArcProgressBar
+        android:id="@+id/pBarOpenCV"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/infoOpenCV"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        app:arc_max="100"
+        app:arc_progress_end_color="@color/green_700"
+        app:arc_progress_start_color="@color/teal_200"
+        app:arc_suffix_text_padding="10dp"
+        app:arc_text_color="@color/white"
+        app:arc_thickness="5dp"
+        app:arc_unfinished_color="@color/colorPrimaryDark"
+        tools:arc_progress="0" />
+
+    <TextView
+        android:id="@+id/textViewPytorch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pBarOpenCV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="PyTorch Lite on GPU"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/infoPytorch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewPytorch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Average inference speed: / ms"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <net.vrgsoft.arcprogress.ArcProgressBar
+        android:id="@+id/pBarPytorch"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/infoPytorch"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        app:arc_max="100"
+        app:arc_progress_end_color="@color/green_700"
+        app:arc_progress_start_color="@color/teal_200"
+        app:arc_suffix_text_padding="10dp"
+        app:arc_text_color="@color/white"
+        app:arc_thickness="5dp"
+        app:arc_unfinished_color="@color/colorPrimaryDark"
+        tools:arc_progress="0" />
+
+    <Button
+        android:id="@+id/startBtn"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:background="@color/teal_700"
+        android:text="Start" />
+
+</RelativeLayout>
